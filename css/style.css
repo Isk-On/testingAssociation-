@@ -5,7 +5,8 @@
 }
 
 body {
-  font-size: 1vw;
+  font-size: 1.8vw;
+
   font-family: "Radio Canada Big", sans-serif;
   font-optical-sizing: auto;
 
@@ -72,7 +73,7 @@ body {
       color: rgb(255, 255, 255);
 
       h2 {
-        font-size: 3vw;
+        font-size: 4vw;
       }
 
       h1 {
@@ -114,7 +115,7 @@ body {
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      gap: 20px;
+      gap: 2vw;
 
       .services-text {
         text-align: center;
@@ -134,7 +135,7 @@ body {
         align-items: center;
         justify-content: center;
         align-items: flex-start;
-        gap: 35px;
+        gap: 4vw;
 
         .service {
           display: flex;
