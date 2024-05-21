@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="fonts/Cloick.ttf" />
     <link rel="stylesheet" href="css/inputStyles.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link
@@ -28,24 +35,54 @@
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <img src="images/logo/logo.png" alt="" />
-          <li><h3 class="asso-name">MSA Association</h3></li>
-          <li><a href=""></a>Home</li>
-          <li><a href=""></a>About</li>
-          <li><a href=""></a>Membership</li>
-          <li><a href=""></a>Contact</li>
-        </ul>
-      </nav>
+      <div class="header-menu">
+        <div class="header-container">
+          <div class="logo">
+            <img src="images/logo/logo.png" alt="" />
+            <h3 class="asso-name">MSA Association</h3>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="#services">About</a></li>
+              <li><a href="#partners-section">Membership</a></li>
+              <li><a href="#contact-section">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="burger-menu">
+            <div class="burger-container">
+              <h3>Menu</h3>
+              <div class="burger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="burger-navbar" id="burger-navbar">
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+
       <div class="about-asso">
-        <h2><i>Республика Узбекистан</i></h2>
-        <h1>Ассоциация традиционной медицины</h1>
-        <button>Услуги, предостовляемые ассоциацией</button>
+        <div>
+          <h2>Республика Узбекистан</h2>
+          <h1>Ассоциация традиционной медицины</h1>
+        </div>
+        <button data-target="#services">
+          Услуги, предостовляемые ассоциацией
+        </button>
       </div>
     </header>
 
-    <section class="services-section">
+    <section id="services" class="services-section">
       <div class="services">
         <div class="services-text">
           <h1>УСЛУГИ</h1>
@@ -135,7 +172,7 @@
       </div>
     </section>
 
-    <section class="partners-section">
+    <section id="partners-section" class="partners-section">
       <h1>Наши партнёры:</h1>
       <div class="partners-slider">
         <div class="slide"><img src="images/partners/amazon.png" alt="" /></div>
@@ -145,7 +182,7 @@
       </div>
     </section>
 
-    <section class="contact-section">
+    <section id="contact-section" class="contact-section">
       <div class="contact-container">
         <div class="contact-text-and-inputs">
           <div class="contact-text">
@@ -156,35 +193,83 @@
             </h3>
           </div>
           <div class="contact-inputs">
-            <div class="main-inputs">
-              <div class="text-field text-field_floating-3">
-                <input
-                  class="text-field__input"
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="."
-                />
-                <label class="text-field__label" for="email">Email</label>
-              </div>
+            <form id="messageForm">
+              <div class="main-inputs">
+                <div class="text-field text-field_floating-3">
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    id="name"
+                    name="Name"
+                    placeholder="."
+                    required
+                  />
+                  <label class="text-field__label" for="email">Ваше имя</label>
+                </div>
 
-              <div class="text-field text-field_floating-3">
-                <input
-                  class="text-field__input"
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="alexander@itchief.ru"
-                />
-                <label class="text-field__label" for="email">Email</label>
+                <div class="text-field text-field_floating-3">
+                  <input
+                    class="text-field__input"
+                    type="text"
+                    id="phoneNumber"
+                    name="Phone-Number"
+                    placeholder="."
+                    required
+                  />
+                  <label class="text-field__label" for="phoneNumber"
+                    >Номер телефона</label
+                  >
+                </div>
               </div>
+              <textarea
+                name="Message"
+                rows="5"
+                cols="15"
+                placeholder="Ваше сообщение"
+                required
+              ></textarea>
+              <input class="submit-button" type="submit" />
+            </form>
+          </div>
+        </div>
+        <div class="info-panel">
+          <div class="circle-info">
+            <div class="phone-and-pos-icon">
+              <img src="images/icons/volume-icon.png" alt="" />
             </div>
-            <textarea name="textarea" rows="5" cols="15" placeholder="Ваше сообщение"></textarea>
-            <button>Отправить ответ</button>
+            <h1>
+              Телефон <br />
+              (СТАЦИОНАРНЫЙ)
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
+              voluptates.
+            </p>
+          </div>
+          <div class="circle-info">
+            <div class="phone-and-pos-icon">
+              <img src="images/icons/location-icon.png" alt="" />
+            </div>
+            <h1>Расположение</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              quo?
+            </p>
           </div>
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="social-media">
+        <div class="social-styles">
+          <img src="images/icons/instagram-logo.png" alt="" />
+        </div>
+        <div class="social-styles">
+          <img src="images/icons/youtube-logo.png" alt="" />
+        </div>
+      </div>
+    </footer>
 
     <script
       type="text/javascript"
