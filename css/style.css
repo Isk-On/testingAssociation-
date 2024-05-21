@@ -93,21 +93,37 @@ body {
       .header-container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
         width: 90%;
 
         .burger-menu {
+          display: none;
+
           .burger-navbar {
+            display: flex;
             position: absolute;
             left: 0px;
             top: -1000px;
+
+            height: 30vh;
+
+            font-size: 7vw;
 
             transition: 1s;
 
             background-color: #0083bb;
 
             width: 100vw;
+
+            ul {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 2vw;
+
+              list-style-type: none;
+            }
           }
 
           .burger-container {
@@ -119,14 +135,14 @@ body {
             position: absolute;
             z-index: 111;
             right: 6%;
-            top: 30%;
+            top: 20%;
 
             cursor: pointer;
             padding: 0.5vw;
 
-            font-size: 1vw;
+            font-size: 4vw;
 
-            height: 2.5vw;
+            height: 6.4vw;
 
             background-color: #0083bb;
 
@@ -139,8 +155,8 @@ body {
               flex-direction: column;
               gap: 25%;
 
-              width: 1.5vw;
-              height: 1.7vw;
+              width: 5vw;
+              height: 4vw;
 
               .bar {
                 width: 100%;
@@ -168,18 +184,16 @@ body {
         color: white;
 
         transition: 1s;
-        .burger-icon{
-          .bar{
+        .burger-icon {
+          .bar {
             background-color: white;
           }
-
         }
       }
 
       .logo {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
 
         .asso-name {
           font-family: "Dancing Script", cursive;
@@ -193,7 +207,7 @@ body {
           pointer-events: none;
           user-select: none;
 
-          width: 10%;
+          width: 5vw;
         }
       }
     }
@@ -601,4 +615,30 @@ body {
 }
 
 @media screen and (max-width: 625px) {
+  body {
+    header {
+      height: 40vh;
+
+      .header-menu {
+        height: 13vw;
+
+        .header-container {
+          .burger-menu {
+            display: block;
+          }
+        }
+
+        .logo {
+          font-size: 5vw;
+
+          img {
+            width: 8vw;
+          }
+        }
+      }
+      nav {
+        display: none;
+      }
+    }
+  }
 }

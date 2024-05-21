@@ -1,16 +1,16 @@
 const nav = document.querySelector(".header-menu");
 
 window.addEventListener("scroll", function () {
-  window.scrollY > 100 
+  window.scrollY > 100 || this.window.innerWidth < 625
     ? (nav.style.backgroundColor = "#212529")
     : (nav.style.backgroundColor = "transparent");
 });
 
-const burger = document.body.querySelector('.burger-menu')
+const burger = document.body.querySelector(".burger-menu");
 
-burger.addEventListener('click', function(e){
-  this.classList.toggle('active')
-})
+burger.addEventListener("click", function (e) {
+  this.classList.toggle("active");
+});
 
 const chat_id = "786490978";
 const botID = "bot6791570227:AAEfUo9Lm0DJwo-cAVjN6kTLHoix96gGnGE";
