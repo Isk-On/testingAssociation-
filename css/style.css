@@ -102,13 +102,15 @@ body {
 
           .burger-navbar {
             display: flex;
+            align-items: center;
+
             position: absolute;
             left: 0px;
             top: -1000px;
 
-            height: 30vh;
+            height: 40vh;
 
-            font-size: 7vw;
+            font-size: 2rem;
 
             transition: 1s;
 
@@ -135,7 +137,7 @@ body {
             position: absolute;
             z-index: 111;
             right: 6%;
-            top: 20%;
+            top: 14%;
 
             cursor: pointer;
             padding: 0.5vw;
@@ -270,7 +272,7 @@ body {
         font-weight: 700;
       }
       button {
-        width: 44vw;
+        width: 50vw;
         height: 5vw;
 
         background-color: #48a9d3;
@@ -304,7 +306,7 @@ body {
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      gap: 2vw;
+      gap: 4vw;
 
       .services-text {
         text-align: center;
@@ -313,7 +315,6 @@ body {
           font-weight: 900;
         }
         p {
-          margin-top: 10px;
           color: #6c757d;
         }
       }
@@ -330,7 +331,6 @@ body {
           display: flex;
           align-items: center;
           flex-direction: column;
-          gap: 15px;
           justify-content: center;
 
           .stats-text-styles {
@@ -344,7 +344,7 @@ body {
             align-items: center;
             flex-direction: column;
             justify-content: center;
-            gap: 15px;
+            gap: 0.3vw;
 
             text-align: center;
             width: 300px;
@@ -616,11 +616,63 @@ body {
 
 @media screen and (max-width: 625px) {
   body {
+    h1 {
+      font-size: 4vw;
+    }
+    p {
+      font-size: 2.5vw;
+    }
+
+    .contact-section {
+      .contact-text-and-inputs {
+        width: 90vw !important;
+      }
+
+      .contact-inputs {
+        .main-inputs {
+          display: flex;
+          flex-direction: column;
+          gap: 0px !important;
+        }
+      }
+
+      .contact-text {
+        h1 {
+          font-size: 5vw !important;
+        }
+      }
+      p {
+        font-size: 2.5vw !important;
+      }
+      .info-panel {
+        h1 {
+          font-size: 3.5vw !important;
+        }
+      }
+    }
+
+    .stats-text-styles {
+      h1 {
+        font-size: 5vw !important;
+      }
+      p {
+        font-size: 2.5vw;
+      }
+    }
+
     header {
       height: 40vh;
 
+      .about-asso{
+        button{
+          width: 70vw !important;
+          
+          font-size: 3vw !important;
+        }
+      }
+
       .header-menu {
-        height: 13vw;
+        height: 9vw;
 
         .header-container {
           .burger-menu {
@@ -638,6 +690,19 @@ body {
       }
       nav {
         display: none;
+      }
+    }
+
+    footer {
+      height: 8vw;
+      .social-styles {
+        width: 6vw !important;
+        height: 6vw !important;
+
+        img {
+          width: 4vw !important;
+          height: 4vw !important;
+        }
       }
     }
   }
