@@ -421,6 +421,68 @@ body {
         }
       }
     }
+
+    .video-slider {
+      margin-top: 40px;
+      width: 100%;
+
+      video,
+      iframe {
+        min-height: 40vw;
+        max-height: 50vw;
+      }
+
+      .slick-arrow{
+        background-color: transparent;
+        border: none;
+        top: 43%;
+
+        font-size: 0px;
+      }
+
+      .slick-prev {
+        position: absolute;
+        left: 3%;
+        z-index: 10;
+      }
+
+      .slick-next {
+        position: absolute;
+        left: 94%;
+        z-index: 10;
+      }
+
+      .slick-prev::before,
+      .slick-next::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        padding: 10px;
+        transform: rotate(135deg);
+        transition: 0.3s;
+      }
+
+      .slick-next::before {
+        transform: rotate(-45deg);
+      }
+
+      .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+
+        margin: 0, auto;
+      }
+    }
+  }
+
+  .video-section {
+    margin: 0px !important;
   }
 
   .contact-section {
@@ -663,10 +725,10 @@ body {
     header {
       height: 40vh;
 
-      .about-asso{
-        button{
+      .about-asso {
+        button {
           width: 70vw !important;
-          
+
           font-size: 3vw !important;
         }
       }
