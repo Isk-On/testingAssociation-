@@ -68,6 +68,8 @@ body {
     height: 100vh;
     text-align: center;
 
+    white-space: nowrap;
+
     background-position: center, center;
 
     background-image: url(../images/headerImg.jpg);
@@ -90,10 +92,35 @@ body {
       position: fixed;
       top: 0px;
 
+      #langSwitcher {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+        font-size: 1em;
+        color: #333;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 40px;
+      }
+
+      #langSwitcher:focus {
+        outline: none;
+        border-color: #888;
+        box-shadow: 0 0 0 2px rgba(100, 100, 255, 0.2);
+      }
+
       .header-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 3vw;
 
         width: 90%;
 
@@ -432,7 +459,7 @@ body {
         max-height: 50vw;
       }
 
-      .slick-arrow{
+      .slick-arrow {
         background-color: transparent;
         border: none;
         top: 43%;
@@ -672,6 +699,22 @@ body {
     header {
       height: 50vh;
       background-size: cover;
+
+      .header-menu {
+        white-space: nowrap;
+
+        nav ul li a {
+          font-size: 0.9em !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .video-slider {
+    .slick-next {
+      left: 90% !important;
     }
   }
 }
@@ -724,6 +767,12 @@ body {
 
     header {
       height: 40vh;
+
+      #langSwitcher {
+        font-size: 1.6em !important;
+        padding: 6px 13px !important;
+        background-position: right 3px center !important;
+      }
 
       .about-asso {
         button {

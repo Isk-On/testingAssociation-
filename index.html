@@ -43,12 +43,24 @@
           </div>
           <nav>
             <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="#services">About</a></li>
-              <li><a href="#partners-section">Membership</a></li>
-              <li><a href="#contact-section">Contact</a></li>
+              <li><a data-i18n="home" href="">Home</a></li>
+              <li><a data-i18n="aboutNav" href="#services">About</a></li>
+              <li>
+                <a data-i18n="Membership" href="#partners-section"
+                  >Membership</a
+                >
+              </li>
+              <li>
+                <a data-i18n="contact" href="#contact-section">Contact</a>
+              </li>
             </ul>
           </nav>
+
+          <select id="langSwitcher">
+            <option value="ru">Русский</option>
+            <option value="en">English</option>
+            <option value="uz">O'zbekcha</option>
+          </select>
 
           <div class="burger-menu">
             <div class="burger-container">
@@ -61,10 +73,16 @@
             </div>
             <div class="burger-navbar" id="burger-navbar">
               <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#services">About</a></li>
-                <li><a href="#partners-section">Membership</a></li>
-                <li><a href="#contact-section">Contact</a></li>
+                <li><a data-i18n="home" href="">Home</a></li>
+                <li><a data-i18n="aboutNav" href="#services">About</a></li>
+                <li>
+                  <a data-i18n="Membership" href="#partners-section"
+                    >Membership</a
+                  >
+                </li>
+                <li>
+                  <a data-i18n="contact" href="#contact-section">Contact</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -73,10 +91,10 @@
 
       <div class="about-asso">
         <div>
-          <h2>Республика Узбекистан</h2>
-          <h1>Ассоциация традиционной медицины</h1>
+          <h2 data-i18n="assoh2">Республика Узбекистан</h2>
+          <h1 data-i18n="assoh1">Ассоциация традиционной медицины</h1>
         </div>
-        <button data-target="#services">
+        <button data-i18n="assoServ" data-target="#services">
           Услуги, предостовляемые ассоциацией
         </button>
       </div>
@@ -85,8 +103,8 @@
     <section id="services" class="services-section">
       <div class="services">
         <div class="services-text">
-          <h1>УСЛУГИ</h1>
-          <p>Услуги, предоставляемые Ассоциацией</p>
+          <h1 data-i18n="services">УСЛУГИ</h1>
+          <p data-i18n="servicesAsso">Услуги, предоставляемые Ассоциацией</p>
         </div>
         <div class="services-list">
           <div class="service">
@@ -94,9 +112,9 @@
               <img src="images/icons/money-icon.png" alt="" />
             </div>
             <div class="service-text-styles">
-              <h1>Налоговые льготы</h1>
-              <p>
-                lorem Члены Ассоциации имеют льготы по уплате единого налогового
+              <h1 data-i18n="servicesTextFirstTitle">Налоговые льготы</h1>
+              <p data-i18n="servicesTextFirstP">
+                Члены Ассоциации имеют льготы по уплате единого налогового
                 платежа с доходов, полученных от реализации произведённых ими
                 изделий народных художественных промыслов и прикладного
                 искусства в порядке, установленном законодательством.
@@ -108,8 +126,8 @@
               <img src="images/icons/laptop-icon.png" alt="" />
             </div>
             <div class="service-text-styles">
-              <h1>Выставки</h1>
-              <p>
+              <h1 data-i18n="servicesTextSecondTitle">Выставки</h1>
+              <p data-i18n="servicesTextSecondP">
                 Члены Ассоциации получат возможность участвовать со своими
                 изделиями ремесленничества на выставках, фестивалях и
                 духовно-просветительских мероприятиях, проводимых как в
@@ -122,8 +140,8 @@
               <img src="images/icons/shield-icon.png" alt="" />
             </div>
             <div class="service-text-styles">
-              <h1>Социальная Защита</h1>
-              <p>
+              <h1 data-i18n="servicesTextThirdTitle">Социальная Защита</h1>
+              <p data-i18n="servicesTextThirdP">
                 Ассоциация «Хунарманд» Узбекистана осуществляет работу по
                 социальной защите членов ассоциации на основании договора с
                 межбанковской страховой компанией «Ишонч».
@@ -137,8 +155,8 @@
     <section class="services-section stats-section">
       <div class="services stats">
         <div class="services-text">
-          <h1>СТАТИСТИКА</h1>
-          <p>Статистика деятельности ассоциации</p>
+          <h1 data-i18n="statsTitle">СТАТИСТИКА</h1>
+          <p data-i18n="statsP">Статистика деятельности ассоциации</p>
         </div>
         <div class="services-list">
           <div class="service">
@@ -147,7 +165,9 @@
             </div>
             <div class="service-text-styles stats-text-styles">
               <h1>99386</h1>
-              <p>Количество зарегистрированных членов ассоциации в системе</p>
+              <p data-i18n="firstStats">
+                Количество зарегистрированных членов ассоциации в системе
+              </p>
             </div>
           </div>
           <div class="service">
@@ -156,7 +176,9 @@
             </div>
             <div class="service-text-styles stats-text-styles">
               <h1>25916</h1>
-              <p>Общее количество членов ассоциации в системе</p>
+              <p data-i18n="SecondStats">
+                Общее количество членов ассоциации в системе
+              </p>
             </div>
           </div>
           <div class="service">
@@ -165,7 +187,9 @@
             </div>
             <div class="service-text-styles stats-text-styles">
               <h1>1396</h1>
-              <p>Общее количество ремесленников, работающих в сфере туризма</p>
+              <p data-i18n="ThirdStats">
+                Общее количество ремесленников, работающих в сфере туризма
+              </p>
             </div>
           </div>
         </div>
@@ -173,24 +197,106 @@
     </section>
 
     <section id="partners-section" class="partners-section">
-      <h1>Наши партнёры:</h1>
+      <h1 data-i18n="ourPartners">Наши партнёры:</h1>
       <div class="partners-slider">
-        <div class="slide"><img src="images/partners/amazon.png" alt="" /></div>
-        <div class="slide"><img src="images/partners/amazon.png" alt="" /></div>
-        <div class="slide"><img src="images/partners/amazon.png" alt="" /></div>
-        <div class="slide"><img src="images/partners/amazon.png" alt="" /></div>
+        <div class="slide">
+          <img src="images/partners/partner.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/partners/partner.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/partners/partner.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/partners/partner.jpg" alt="" />
+        </div>
       </div>
     </section>
 
     <section id="partners-section video-section" class="partners-section">
-      <h1>Наши видео:</h1>
-      <div class="video-slider">   
-        <div class="slide"><iframe width="80%" height="auto" src="https://www.youtube.com/embed/Yovda7CXXnc?si=M1kccIMOZCD8cX8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-        <div class="slide"><iframe width="80%" height="auto" src="https://www.youtube.com/embed/B9F0iqEAoEA?si=ESiKdiMXbS_QmZ36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-        <div class="slide"><iframe width="80%" height="auto" src="https://www.youtube.com/embed/3Osv80pXzec?si=Bjxy6SNhIZkSR7jJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-        <div class="slide"><iframe width="80%" height="auto" src="https://www.youtube.com/embed/H6WlyE2z9Z4?si=tVYwKEZPPovcR54Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-        <div class="slide"><iframe width="80%" height="auto" src="https://www.youtube.com/embed/d0lv51aMqJk?si=tXtWRGg7_oWjtZRG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-        <div class="slide"><iframe width="80%" height="auto" src="https://www.youtube.com/embed/vyMmZ6YuIO8?si=aJyMHqeM7thgyqgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      <h1 data-i18n="ourVideo">Наши видео:</h1>
+      <div class="video-slider">
+        <div class="slide">
+          <iframe
+            width="80%"
+            height="auto"
+            src="https://www.youtube.com/embed/Yovda7CXXnc?si=M1kccIMOZCD8cX8k"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div class="slide">
+          <iframe
+            width="80%"
+            height="auto"
+            src="https://www.youtube.com/embed/B9F0iqEAoEA?si=ESiKdiMXbS_QmZ36"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div class="slide">
+          <iframe
+            width="80%"
+            height="auto"
+            src="https://www.youtube.com/embed/3Osv80pXzec?si=Bjxy6SNhIZkSR7jJ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div class="slide">
+          <iframe
+            width="80%"
+            height="auto"
+            src="https://www.youtube.com/embed/H6WlyE2z9Z4?si=tVYwKEZPPovcR54Y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div class="slide">
+          <iframe
+            width="80%"
+            height="auto"
+            src="https://www.youtube.com/embed/d0lv51aMqJk?si=tXtWRGg7_oWjtZRG"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div class="slide">
+          <iframe
+            width="80%"
+            height="auto"
+            src="https://www.youtube.com/embed/vyMmZ6YuIO8?si=aJyMHqeM7thgyqgQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div class="slide">
+          <iframe
+            width="80%"
+            height="auto"
+            src="https://www.youtube.com/embed/gSffY6nK3m8?si=7eHjuTgle-SdvdLG"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+        </div>
+        <div class="slide">
+          <img src="images/pic.jpg" width="55%" height="auto" alt="" />
+        </div>
       </div>
     </section>
 
@@ -198,8 +304,8 @@
       <div class="contact-container">
         <div class="contact-text-and-inputs">
           <div class="contact-text">
-            <h1>Связаться с нами</h1>
-            <h3>
+            <h1 data-i18n="contactWIthUs">Связаться с нами</h1>
+            <h3 data-i18n="contactWithUsP">
               Есть вопросы или замечания? Просто напишите <br />
               нам сообщение!
             </h3>
@@ -216,7 +322,12 @@
                     placeholder="."
                     required
                   />
-                  <label class="text-field__label" for="email">Ваше имя</label>
+                  <label
+                    data-i18n="contactWIthUsPlaceholderFirst"
+                    class="text-field__label"
+                    for="email"
+                    >Ваше имя</label
+                  >
                 </div>
 
                 <div class="text-field text-field_floating-3">
@@ -228,7 +339,10 @@
                     placeholder="."
                     required
                   />
-                  <label class="text-field__label" for="phoneNumber"
+                  <label
+                    data-i18n="contactWIthUsPlaceholderSecond"
+                    class="text-field__label"
+                    for="phoneNumber"
                     >Номер телефона</label
                   >
                 </div>
@@ -237,10 +351,14 @@
                 name="Message"
                 rows="5"
                 cols="15"
-                placeholder="Ваше сообщение"
+                placeholder="Your message"
                 required
               ></textarea>
-              <input class="submit-button" type="submit" />
+              <input
+                data-i18n="contactWIthUsPlaceholderSubmit"
+                class="submit-button"
+                type="submit"
+              />
             </form>
           </div>
         </div>
@@ -249,23 +367,19 @@
             <div class="phone-and-pos-icon">
               <img src="images/icons/volume-icon.png" alt="" />
             </div>
-            <h1>
-              Телефон <br />
-              (СТАЦИОНАРНЫЙ)
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-              voluptates.
-            </p>
+            <h1 data-i18n="contactWIthUsPhoneTitle">Телефон</h1>
+            <p data-i18n="contactWIthUsPhoneP">+998 (50) 002-44-91</p>
           </div>
           <div class="circle-info">
             <div class="phone-and-pos-icon">
               <img src="images/icons/location-icon.png" alt="" />
             </div>
-            <h1>Расположение</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-              quo?
+            <h1 data-i18n="contactWIthUsLocationTitle">Расположение</h1>
+            <p data-i18n="contactWIthUsLocationP">
+              100000, ул.А.Навоий 2к2, <br />
+              Шайхонтахурский район, <br />
+              Ташкент, <br />
+              Узбекистан
             </p>
           </div>
         </div>
